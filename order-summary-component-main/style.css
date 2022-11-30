@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,500;1,500&display=swap');
+
+*{
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+html{
+    background-color: hsl(225, 100%, 94%);
+    background-image:url("./../order-summary-component-main/images/pattern-background-desktop.svg");
+    background-repeat: repeat no-repeat;
+    background-position: 50% 0%;
+    height:100%;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    text-align: center;
+    height: 100%;
+}
+
+.content{
+    background-color: white;
+    width: 350px;
+    height: 600px;
+    border-radius: 20px;
+    align-self: center;
+}
+
+.principalImg{
+    width: 100%;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.payment{
+    background-color: hsl(225, 100%, 98%);
+    width: 80%;
+    height: 14%;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    margin-bottom: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.icon{
+    margin-left: 5%;
+}
+
+#textPara{
+    margin-top:5%;
+    margin-bottom: 7%;
+    font-size: 16px;
+    color:hsl(224, 23%, 55%);
+    width: 85%;
+    text-align: center;
+    padding-right: 7.5%;
+    padding-left: 7.5%;
+    
+}
+#textPayment{
+    width: 100%;
+    height: 100%;
+    margin-right: 12%;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#anualPrice{
+    color:hsl(224, 23%, 55%);
+    font-weight: 500;
+}
+
+#anualPlan{
+    padding-bottom: 10%;
+    font-weight: 700;
+    font-size: 14px;
+    color: hsl(223, 47%, 23%);
+}
+
+aside{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-right: 5%;
+    font-weight: 500;
+}
+
+h1{
+    margin-top: 7%;
+    color:hsl(223, 47%, 23%);
+    font-size: 25px;
+    font-weight: 900;
+}
+
+a{
+    color: hsl(245, 75%, 52%);
+    font-weight: 700;
+}
+
+a:hover{
+    text-decoration: none;
+    color:hwb(249 33% 0%);
+}
+
+button{
+    width: 80%;
+    height: 7%;
+    margin-bottom: 6%;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.proceed{
+    color: white;
+    background-color: hsl(245, 75%, 52%);
+    border: 0px;
+    font-weight: 500;
+    box-shadow: 0px 10px 30px hwb(249 33% 0%);
+}
+
+
+.cancel{
+    color: hsl(224, 23%, 55%);
+    background: none;
+    border: 0px;
+    font-weight: 700;
+}
+
+.proceed:hover{
+    background-color: hwb(249 33% 0%);
+}
+
+.cancel:hover{
+    color:hsl(223, 47%, 23%);
+}
+
+
+
+@media screen and (max-width: 400px) {
+
+    button{
+        height: 10%;
+    }
+    .proceed{
+        box-shadow: 0px 5px 30px hwb(249 57% 0%);
+        margin-bottom: 2%;
+    }
+
+    #textPara{
+        width: 75%;
+        padding-left: 12.5%;
+        padding-right: 12.5%;
+    }
+}
